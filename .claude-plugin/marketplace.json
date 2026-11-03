@@ -1,0 +1,12 @@
+﻿{
+  "name": "sobiegroup",
+  "owner": { "name": "SobieGroup" },
+  "description": "Mods SobieGroup pour Claude Code et l'app Claude.",
+  "plugins": [
+    {
+      "name": "sobiegroup-claude-limit-meter",
+      "source": "./",
+      "description": "Bande au-dessus du prompt : vos limites réelles 5 h et semaine relevées auprès d'Anthropic, marge de dépassement et bouton « Finir le prompt »."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "sobiegroup-claude-limit-meter",
+  "version": "2.0.0",
+  "description": "Bande au-dessus du prompt de l'app Claude : vos limites réelles 5 h et semaine (relevées auprès d'Anthropic), marge de dépassement et bouton « Finir le prompt ».",
+  "author": {
+    "name": "SobieGroup"
+  },
+  "license": "MIT",
+  "keywords": [
+    "usage",
+    "limits",
+    "tokens",
+    "quota",
+    "band"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "blockAtLimit": {
+      "type": "boolean",
+      "title": "Bloquer l'envoi à la limite",
+      "description": "Refuse un nouveau prompt quand 100 % (+ la marge de dépassement active) est atteint.",
+      "default": false
+    },
+    "finishText": {
+      "type": "string",
+      "title": "Texte de « Finir le prompt »",
+      "description": "Message envoyé par le bouton « Finir le prompt ».",
+      "default": "Termine la tâche en cours jusqu'au bout, sans t'arrêter ni me reposer de question, puis fais un résumé court de ce qui a été fait."
+    }
+  }
+}
